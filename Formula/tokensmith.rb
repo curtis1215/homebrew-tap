@@ -5,13 +5,13 @@
 class Tokensmith < Formula
   desc "Terminal management game where your real AI-coding tokens fuel an AI company"
   homepage "https://github.com/curtis1215/tokensmith"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.1/tokensmith_darwin_amd64.tar.gz"
-      sha256 "ac523a8dd124e65367f0beeaa72fb9db581e3f1eb526ac72937e19e9232e7695"
+      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.2/tokensmith_darwin_amd64.tar.gz"
+      sha256 "543e9f961adaa0d97f926488a0f4285043e1d8f0851f77c47a44a1baee7e7a27"
 
       define_method(:install) do
         bin.install "tokensmith"
@@ -19,8 +19,8 @@ class Tokensmith < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.1/tokensmith_darwin_arm64.tar.gz"
-      sha256 "b4a8740b40d26cd485d3f7914c3b33a36088861a8112ad37823c6cbf964ff430"
+      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.2/tokensmith_darwin_arm64.tar.gz"
+      sha256 "4124967615b5fb2767b412c753e0f7dcf07fcc956ed36525ab55d1772bfd17a5"
 
       define_method(:install) do
         bin.install "tokensmith"
@@ -31,16 +31,16 @@ class Tokensmith < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.1/tokensmith_linux_amd64.tar.gz"
-      sha256 "c81a364d883cc23ac2a070bd99a3bda79b935a375a1297a07ba8d25392394d87"
+      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.2/tokensmith_linux_amd64.tar.gz"
+      sha256 "466991d4e9696440d234f593e1770e33a185a65bc17c234ae2f1095e0257db2b"
       define_method(:install) do
         bin.install "tokensmith"
         bin.install "tokensmithd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.1/tokensmith_linux_arm64.tar.gz"
-      sha256 "fd11e6a4a1b95745497a0d83cdb30d9b44bab0604aed54f6dd448a1b3a870bc1"
+      url "https://github.com/curtis1215/tokensmith/releases/download/v0.5.2/tokensmith_linux_arm64.tar.gz"
+      sha256 "f9d546d05a072595eade2248b94f8619cd875dcaa603c40b073c6b17e5ffcb52"
       define_method(:install) do
         bin.install "tokensmith"
         bin.install "tokensmithd"
